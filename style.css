@@ -1,0 +1,251 @@
+* {margin 0; padding: 0;}
+body {
+	width: 900px;
+	margin: auto;
+	background-image: url('images/tujuh.jpg');
+}
+
+header {
+	width: 900px;
+	height: 250px;
+}
+
+header img {
+	width: 900px;
+	height: 250px;
+}
+#tengah {
+	margin: 20px 20px 20px 20px;
+	border: 2px solid red;
+	text-align: justify;
+}
+#tengah p{
+	padding: 0px 20px 0px 20px;
+	text-align: justify;
+	font-family: times new roman;
+	font-size: 16;
+	color: black;
+}
+
+#tengah p:first-letter{
+	margin-left: 20px;
+	font-size:x-large;
+	color:blue;
+	
+}	
+
+
+ .gallery 2{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	 
+}
+.gallery2 li {
+    padding-bottom: 10px;
+    display: inline-block;
+	text-align:center;
+}
+.gallery2 img {
+    
+    width: 267px;
+	height:400px;
+    margin-left:10px;
+	margin-right:10px;
+    margin-bottom:15px;
+    margin-top:5px;    
+    border: 5px solid #fcfcfc;
+    border-radius: 4px;
+}
+.gallery2 img:hover{
+    border: 5px solid #42C5BB;
+    cursor:pointer;
+	font-weight:bold;
+} 
+.gallery2 a{
+text-decoration:none;
+color:black;
+}
+.gallery2 a:hover{
+
+font-weight:bold;
+color:blue;
+}
+
+
+
+
+
+menu {
+	width: 880px;
+	height: 30px;
+	background-color: red;
+	padding: 10px;
+}
+menu li {
+	list-style: none;
+	float: left;
+	margin-right: 20px;
+	margin-top: 5px;
+	color: #fff;
+}
+menu li a {
+	text-decoration: none;
+	color: #fff;
+}
+menu li a:hover {
+	color: blue;
+}
+
+
+.recomended {
+	width: 100%;
+	overflow: hidden;
+	background-color: #a9a9a9;
+	margin-top: 5px;
+}
+.recomended h1 {
+	text-align: center;
+	color: red;
+}
+.recomended .recomendedKiri {
+	width: 435px;
+	float: left;
+	margin: 10px 5px 5px 10px;
+}
+ 
+}
+.recomended p {
+	text-align: justify;
+}
+.recomended .recomendedKanan {
+	width: 435px;
+	margin: 10px 10px 5px 5px;
+	float: left;
+}
+.recomended a {
+	text-decoration: none;
+	color: red;
+}
+.recomended a:hover {
+	color: #000;
+}
+.recomended h3 {
+`	color: #e9a708;
+}
+
+#footer {
+	border-top: 2px solid red;
+	padding-top: 10px;
+	margin-top: 25px;
+	text-align: center;
+	color: white;
+	margin-bottom: 20px;
+	font-size:20;
+	background:rgba(0,0,0,0.7);
+}
+#span {
+	float: left;
+	padding: 20px 20px 20px 20px;
+}
+#span1 {
+	float: left;
+	padding: 5px 20px 5px 20px;
+}
+#tengah2 {
+	margin: 20px 20px 20px 20px;
+	 border-bottom:1px solid black;
+	text-align: justify;
+}
+#tengah2 p{
+	padding: 0px 20px 0px 20px;
+	text-align: justify;
+	font-family: times new roman;
+	font-size: 16;
+	color: black;
+}
+
+#tengah2 p:first-letter{
+	margin-left: 20px;
+	font-size:x-large;
+	color:blue;
+	
+}
+#buka{
+	font-family: monotype corsiva;
+	font-size: 20;
+	padding: 20px 20px 20px 700px;
+	border-bottom:black;
+	
+}
+
+.gal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;}
+.menu-wrapper {
+			margin:10px auto;
+			position: relative;
+			width:900px;
+		}
+		.menu-wrapper ul{
+			margin:0;
+			padding:0;
+			background-color: #333;
+		}
+			ul.menu-horizontal {
+				width:100%;
+				position: relative;
+			}
+			ul.menu-horizontal li {
+				list-style: none;
+			}
+			/*Style menu horizontal*/
+			ul.menu-horizontal >li{
+				display: inline-block;
+			}
+			ul.menu-horizontal li a{
+				position: relative;
+				display: block;
+				padding:10px 20px;
+				text-decoration: none;
+				color:#eee;
+			}
+			ul.menu-horizontal li a:hover {
+				background-color:#DD3D36;
+				-webkit-transition:all 0.5s ease-in-out;
+			}
+			 
+
+			/*Menyembunyikan sub menu ketika tidak dihover*/
+			ul.submenu {
+				position: absolute;
+				display: none;
+			}
+
+			ul.submenu li {
+				position: relative;
+			}
+
+			 
+			
+			/*Menampilkan sub menu level 1 ketika menu di hover*/
+			ul.menu-horizontal li:hover ul.level-1 {
+				min-width: 150px;
+				display: block;
+				top:100%;
+				-webkit-animation:mantul-vertikal 1s;
+				animation:mantul-vertikal 1s;
+			}
+
+			/*Menampilkan sub menu level 1 ketika menu di hover*/
+			ul.menu-horizontal li ul li:hover ul.level-2 {
+				min-width: 150px;
+				display: block;
+				-webkit-animation:mantul-horizontal 1s;
+				animation:mantul-horizontal 1s;
+				top:0;
+				left:100%;
+			}
+
+			 

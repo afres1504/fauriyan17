@@ -1,0 +1,128 @@
+<html>
+	<head>
+		<title>Manchester United</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	
+<script language="JavaScript" type="text/javascript">
+ 
+ 
+<!-- Begin
+// Set slideShowSpeed (milliseconds)
+var slideShowSpeed = 2500;
+// Duration of crossfade (seconds)
+var crossFadeDuration = 3;
+var Pic = new Array();
+// to add more images, just continue
+// the pattern, adding to the array below
+Pic[0] = 'images/satu.jpg'
+Pic[1] = 'images/dua.jpg'
+Pic[2] = 'images/tiga.jpg'
+
+ 
+
+// do not edit anything from this line to "End -->"
+var t;
+var j = 0;
+var p = Pic.length;
+var preLoad = new Array();
+for (i = 0; i < p; i++) {
+preLoad[i] = new Image();
+preLoad[i].src = Pic[i];
+}
+function javaSlideShow() {
+if (document.all) {
+document.images.SlideShow.style.filter="blendTrans(duration=2)";
+document.images.SlideShow.style.filter="blendTrans(duration=crossFadeDuration)";
+document.images.SlideShow.filters.blendTrans.Apply();
+}
+document.images.SlideShow.src = preLoad[j].src;
+if (document.all) {
+document.images.SlideShow.filters.blendTrans.Play();
+}
+j = j + 1;
+if (j > (p - 1)) j = 0;
+t = setTimeout('javaSlideShow()', slideShowSpeed);
+}
+//  End -->
+</script>
+
+	</head>
+<body onload="javaSlideShow()">
+			 
+  <div>
+  
+<div class="gallery" id="javascript">
+<img src="images/satu.jpg" name='SlideShow' width=900 height=400 > 
+ 
+
+ </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+		<div class="menu-wrapper">
+		<ul class="menu-horizontal">
+       <li><a href="index.html">Home</a></li>
+       
+       <li><a href="Menu.html">Menu <span class="arrow"></span></a>
+              <ul class="submenu level-1">
+                     <li><a href="DaftarPemain.html">Daftar Pemain</a></li>
+                      <li><a href="Kumpulan Video MU.html">Kumpulan Video MU</a></li>
+                     <li><a href="#">Sejarah <span class="arrow"></span></a>
+                              <ul class="submenu level-2">
+							  <li><a href="ManchesterUnited.html">Sejarah Manchester United</a></li>
+                                   <li><a href="sejarahold.html">Sejarah Old Traford</a></li>
+								   
+								   
+                                   
+                                  
+                            </ul>
+                     </li>
+              </ul>
+       </li>
+	    
+	    <li><a href="AboutUs.html">About Us</a></li>
+		<li><a href="profil.html">Profil</a></li>
+</ul>
+</div>
+<div class="recomended">
+<div class="gallery2">
+		<h1>Squad Team Manchester United</h1>
+		 
+		 <ul>
+		<li><img src="images/hererra.jpg"><br>Ander Herrera (Spanyol)</li>
+		<li><img src="images/rooney.jpg"><br>Wayne Rooney (Inggris)</li>
+		<li><img src="images/ibrahim.jpg"> <br> Zlatan Ibrahimovic (Swedia)</li>
+		<li><img src="images/ryan.jpg"><br>Henrikh Mkhitaryan (Armenia)</li>
+		<li><img src="images/darmian.jpg"><br>Matteo Darmian (Italia)</li>
+		<li><img src="images/lukeshaw.jpg"><br>Luke Shaw (Inggris)</li>
+		<li><img src="images/young.jpg"><br>Ashley Young (Inggris)</li>
+		<li><img src="images/martial.jpg"><br>Anthony Martial (Prancis)</li>
+		<li><img src="images/smalling.jpg"><br>Chris Smalling (Inggris)</li>
+		<li><img src="images/rojo.jpg"><br>Marcos Rojo (Argentina)</li>
+		<li><img src="images/raspord.jpg"><br>Marcus Rashford (Inggris)</li>
+		<li><img src="images/lingard.jpg"><br>Jesse Lingard (Inggris)</li>
+		<li><img src="images/depay.jpg"><br>Memphis Depay (Belanda)</li>
+		<li><img src="images/eric.jpg"><br>Eric Bailly (Pantai Gading)</li>
+		<li><img src="images/enambelas.jpg"><br>Jose Mourinho</li>
+		</ul>
+	 </div>
+		</div><!--akhir class recomended-->
+				 
+					<div style="clear: both"></div>
+					<div id="footer"> &copy Tathbiqon Fauriyan<br>Teknik Informatika<br>Universitas Pamulang &reg <br>2017<br>
+					<audio controls autoplay>
+					<source src="images/Faded.mp3" hidden="true"type="audio/mp3"></audio></div>
+					
+
+
+					
+</body>
+</html>

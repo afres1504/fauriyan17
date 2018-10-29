@@ -1,0 +1,71 @@
+body {
+			margin:0;
+			padding:0;
+			line-height: 1.5;
+		}
+		.menu-wrapper {
+			margin:10px auto;
+			position: relative;
+			width:700px;
+		}
+		.menu-wrapper ul{
+			margin:0;
+			padding:0;
+			background-color: #333;
+		}
+			ul.menu-horizontal {
+				width:100%;
+				position: relative;
+			}
+			ul.menu-horizontal li {
+				list-style: none;
+			}
+			/*Style menu horizontal*/
+			ul.menu-horizontal >li{
+				display: inline-block;
+			}
+			ul.menu-horizontal li a{
+				position: relative;
+				display: block;
+				padding:10px 20px;
+				text-decoration: none;
+				color:#eee;
+			}
+			ul.menu-horizontal li a:hover {
+				background-color:#DD3D36;
+				-webkit-transition:all 0.5s ease-in-out;
+			}
+			 
+
+			/*Menyembunyikan sub menu ketika tidak dihover*/
+			ul.submenu {
+				position: absolute;
+				display: none;
+			}
+
+			ul.submenu li {
+				position: relative;
+			}
+
+			 
+			
+			/*Menampilkan sub menu level 1 ketika menu di hover*/
+			ul.menu-horizontal li:hover ul.level-1 {
+				min-width: 150px;
+				display: block;
+				top:100%;
+				-webkit-animation:mantul-vertikal 1s;
+				animation:mantul-vertikal 1s;
+			}
+
+			/*Menampilkan sub menu level 1 ketika menu di hover*/
+			ul.menu-horizontal li ul li:hover ul.level-2 {
+				min-width: 150px;
+				display: block;
+				-webkit-animation:mantul-horizontal 1s;
+				animation:mantul-horizontal 1s;
+				top:0;
+				left:100%;
+			}
+
+			 
